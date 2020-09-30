@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    tools:context="com.example.laddergame.LadderGameActivity"
+    android:background="@drawable/wood"
+    android:weightSum="10"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btnGameStart"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_border"
+            android:fontFamily="@font/bold"
+            android:onClick="onClick"
+            android:text="Game Start"
+            android:textStyle="bold" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/layoutCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnGameStart">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="9"
+    >
+ <com.google.android.gms.ads.AdView
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/adView"
+
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     ads:adSize="BANNER"
+     ads:adUnitId="ca-app-pub-4692999327577755/6503903487"
+     >
+
+
+
+ </com.google.android.gms.ads.AdView>
+</LinearLayout>
+
+</LinearLayout>
